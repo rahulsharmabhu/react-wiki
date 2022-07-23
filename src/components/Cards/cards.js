@@ -1,12 +1,10 @@
 import React from 'react'
 import styles from  './Cards.module.scss'
 
-
-
 const cards = ({results}) => {
  
   let display;
-  if(results){
+  if(results) {
     display = results.map(x => {
     let { id, name,image,location,status} = x
     return (<div key={id} className='col-md-4 mb-4 position-relative'>
@@ -37,7 +35,7 @@ const cards = ({results}) => {
     })()}
     </div>)
     })
-  }else {
+  } else {
     display = "No characters Found :/"
   }
   return (

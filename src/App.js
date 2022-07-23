@@ -2,7 +2,8 @@ import React, { useState,useEffect } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import 'bootstrap/dist/js/bootstrap';
 import Filters from './components/Filters/filters'
-import Cards from "./components/Cards/cards"; 
+import Cards from "./components/Cards/cards";
+import Pagination from './components/Pagination/pagination'; 
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
          </div>
         </div>
       </div>
+      <Pagination pageNumber={pageNumber} setPagenumber = {setPagenumber} />
     </div>
   );
 }
