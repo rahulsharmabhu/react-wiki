@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactPaginate from 'react-paginate'
 
+
 const pagination = ({ info,pageNumber,setPagenumber}) => {
   return (
     <ReactPaginate className='pagination justify-content-center gap-4 my-4' nextLabel="Next" previousLabel="Prev"
